@@ -10,6 +10,6 @@ for file in $(ls tags)
                 podman pull $dockerhub_tag
                 podman tag $dockerhub_tag $ghcr_tag
                 podman push $ghcr_tag
-                podman image rm $dockerhub_tag
+                # podman image rm $dockerhub_tag
         done
 done
